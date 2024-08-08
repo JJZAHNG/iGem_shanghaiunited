@@ -1,0 +1,119 @@
+/* styles.css */
+
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 122px; /* Adjust padding to match navbar height */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 122px; /* Adjust height to match UI design */
+    background-color: #676728;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 110px;
+    height: 110px;
+    border-radius: 0px;
+    margin-right: 20px;
+}
+
+.navbar .logo .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo .brand span {
+    font-family: 'Source Han Sans SC', sans-serif;
+    font-weight: 400;
+    font-size: 36px; /* 调整字体大小为当前的两倍 */
+    color: #FFFFFF;
+    line-height: 42px; /* 调整行高以匹配字体大小 */
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    white-space: nowrap; /* 防止文本换行 */
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add right margin to nav links */
+}
+
+.navbar .nav-links a {
+    color: white; /* Change text color to white */
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar .nav-links a:hover {
+    color: #FFD700; /* Change text color on hover to gold */
+}
+
+/* Dropdown menu styling */
+.navbar .nav-links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #676728;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px; /* Rounded corners for dropdown */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navbar .nav-links .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .nav-links .dropdown-content a:hover {
+    /*background-color: #575757;*/
+    color: #FFD700; /* Change text color on hover to gold */
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

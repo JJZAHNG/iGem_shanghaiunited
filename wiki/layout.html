@@ -7,18 +7,60 @@
     <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
-    <!-- Bootstrap CSS -->
-    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
-
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'styles.css') }}" rel="stylesheet">
 
     <title>{% block title %}{% endblock %} | HW-ShanghaiUnited - iGEM 2024</title>
 
 </head>
 <body>
   <!-- Navigation -->
-  {% include 'menu.html' %}
+  <div class="navbar">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo">
+        <div class="brand">
+            <span>HW-ShanghaiUnited</span>
+        </div>
+    </div>
+    <div class="nav-links">
+      <div class="dropdown">
+        <a href="/">Home</a>
+        <div class="dropdown-content">
+          <a href="/home-sub1">Home Sub1</a>
+          <a href="/home-sub2">Home Sub2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="/team">Team</a>
+        <div class="dropdown-content">
+          <a href="/team-sub1">Team Sub1</a>
+          <a href="/team-sub2">Team Sub2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="/project">Project</a>
+        <div class="dropdown-content">
+          <a href="/project-sub1">Project Sub1</a>
+          <a href="/project-sub2">Project Sub2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="/dry-lab">Dry Lab</a>
+        <div class="dropdown-content">
+          <a href="/dry-lab-sub1">Dry Lab Sub1</a>
+          <a href="/dry-lab-sub2">Dry Lab Sub2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="/experiment">Experiment</a>
+        <div class="dropdown-content">
+          <a href="/experiment-sub1">Experiment Sub1</a>
+          <a href="/experiment-sub2">Experiment Sub2</a>
+        </div>
+      </div>
+      <a href="/achievement">Achievement</a>
+    </div>
+  </div>
 
   <!-- Header -->
   <header class="bg-hero py-5 mb-5">
