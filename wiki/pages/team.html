@@ -32,54 +32,85 @@
 
   <div class="scroll-item team-container">
     <div class="svg-wrapper-top">
-      <!-- 第五个SVG图片，距离页面顶部30px，并且水平居中 -->
+      <!-- 第五个SVG图片，距离页面顶部10px，并且水平居中 -->
       <img src="{{ url_for('static', filename='team_assets/WetLab.svg') }}" alt="WetLab SVG Image">
     </div>
     <div class="circle-container">
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p1.svg') }}'); border-color: #447C94;">
-        <div class="name-tag" onclick="handleClick()"> <!-- 名字标签 -->
-          <img src="{{ url_for('static', filename='team_assets/tag1.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear1.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p1.svg') }}'); border-color: #447C94;">
+          <div class="name-tag" onclick="handleClick(this, 'Xinyi Wang', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+            <img src="{{ url_for('static', filename='team_assets/tag1.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p2.svg') }}'); border-color: #F3C52C;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag2.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear2.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p2.svg') }}'); border-color: #F3C52C;">
+          <div class="name-tag" onclick="handleClick(this, 'Yue Meng Li', 'Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.')">
+            <img src="{{ url_for('static', filename='team_assets/tag2.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p3.svg') }}'); border-color: #C25B3A;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag3.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear3.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p3.svg') }}'); border-color: #C25B3A;">
+          <div class="name-tag" onclick="handleClick(this, 'Muyan Li', 'In condimentum facilisis porta. Sed nec diam eu diam mattis viverra.')">
+            <img src="{{ url_for('static', filename='team_assets/tag3.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p4.svg') }}'); border-color: #4D5D31;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag4.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear4.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p4.svg') }}'); border-color: #4D5D31;">
+          <div class="name-tag" onclick="handleClick(this, 'Weien Qo', 'Phasellus ante felis, tempor at pretium et, lacinia vel leo.')">
+            <img src="{{ url_for('static', filename='team_assets/tag4.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
     </div>
     <div class="circle-container">
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p5.svg') }}'); border-color: #3C5923;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag5.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear5.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p5.svg') }}'); border-color: #3C5923;">
+          <div class="name-tag" onclick="handleClick(this, 'Yu Chen', 'Nulla facilisi. Sed at nisi et metus vehicula interdum.')">
+            <img src="{{ url_for('static', filename='team_assets/tag5.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p6.svg') }}'); border-color: #C25B3A;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag6.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear6.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p6.svg') }}'); border-color: #C25B3A;">
+          <div class="name-tag" onclick="handleClick(this, 'Ruoxin Yang', 'Vestibulum volutpat felis ut nulla vehicula, sit amet mollis neque bibendum.')">
+            <img src="{{ url_for('static', filename='team_assets/tag6.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p7.svg') }}'); border-color: #3C5923;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag7.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear7.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p7.svg') }}'); border-color: #3C5923;">
+          <div class="name-tag" onclick="handleClick(this, 'Haobin Yao', 'Quisque facilisis libero eget velit tempor, et tincidunt ex convallis.')">
+            <img src="{{ url_for('static', filename='team_assets/tag7.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
-      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p8.svg') }}'); border-color: #447C94;">
-        <div class="name-tag" onclick="handleClick()">
-          <img src="{{ url_for('static', filename='team_assets/tag8.svg') }}" alt="Name Tag">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear8.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p8.svg') }}'); border-color: #447C94;">
+          <div class="name-tag" onclick="handleClick(this, 'Shinan Liu', 'Fusce tincidunt, mi a aliquam volutpat, neque nulla ornare elit, eget posuere mauris neque non ligula.')">
+            <img src="{{ url_for('static', filename='team_assets/tag8.svg') }}" alt="Name Tag">
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- 个人简介弹出泡泡 -->
+<div id="bio-bubble" class="bio-bubble">
+  <h3 id="bio-name"></h3>
+  <p id="bio-description"></p>
+  <button onclick="closeBubble()">Close</button>
 </div>
 
 <style>
@@ -93,76 +124,148 @@
   }
 
   .scroll-item {
-    width: 100vw; /* 宽度撑满整个屏幕 */
-    height: 100vh; /* 高度撑满整个屏幕 */
+    width: 100vw;
+    height: 100vh;
     flex-shrink: 0;
     scroll-snap-align: start;
   }
 
   .team-container {
-    position: relative; /* 确保子元素相对于此容器定位 */
+    position: relative;
     background: linear-gradient(225deg, #FCF19F 0%, #ACE4B5 100%);
     display: flex;
-    flex-direction: column; /* 纵向排列 */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .svg-wrapper-top {
-    position: relative; /* 确保相对定位 */
-    margin-top: 10px; /* 距离页面顶部10px */
-    text-align: center; /* 水平居中 */
-    width: 100%; /* 确保宽度为100% */
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
   }
 
   .circle-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0; /* 行间距 */
+    margin: 20px 0;
     width: 100%;
-    position: relative; /* 使名字标签相对于父元素定位 */
+    position: relative;
+  }
+
+  .circle-wrapper {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 30px 20px;
   }
 
   .circle {
-    width: 170px;
-    height: 170px;
-    background-size: cover; /* 确保背景图片覆盖整个圆 */
-    background-position: center; /* 居中显示背景图片 */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    margin: 30px 20px; /* 调整圆形之间的间距 */
-    border: 5px solid; /* 添加边框 */
-    position: relative; /* 使名字标签相对于圆圈定位 */
+    border: 5px solid;
+    position: relative;
+    z-index: 2; /* 将头像设为前景 */
+  }
+
+  .gear {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 210px;
+    height: 210px;
+    background-size: contain;
+    transition: transform 3s ease;
+    z-index: 1; /* 将齿轮设为背景 */
   }
 
   .name-tag {
     position: absolute;
-    bottom: -40px; /* 调整这个值，使名字标签覆盖圆圈的下方 */
-    left: 50%; /* 使标签居中 */
-    transform: translateX(-50%); /* 水平居中对齐 */
-    cursor: pointer; /* 鼠标变成手型 */
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 3; /* 将 name tag 设为最前 */
+  }
+
+  .bio-bubble {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .bio-bubble h3 {
+    margin-top: 0;
+  }
+
+  /* 模糊和淡化效果 */
+  .faded {
+    opacity: 0.2;
+    transition: opacity 3s ease;
+  }
+
+  .rotating {
+    transform: rotate(360deg);
   }
 </style>
 
 <script>
-  document.addEventListener('wheel', function(e) {
-    e.preventDefault();
-    const container = document.querySelector('.scroll-container');
-    const delta = Math.sign(e.deltaY);
-    container.scrollBy({
-      top: delta * window.innerHeight, // 每次滚动一整页的高度
-      behavior: 'smooth'
-    });
-  }, { passive: false });
+  function handleClick(element, name, description) {
+    const gear = element.closest('.circle-wrapper').querySelector('.gear');
+    const circles = document.querySelectorAll('.circle');
+    const bioBubble = document.getElementById('bio-bubble');
+    const bioName = document.getElementById('bio-name');
+    const bioDescription = document.getElementById('bio-description');
 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-      e.preventDefault();
-      const container = document.querySelector('.scroll-container');
-      const delta = e.key === 'ArrowDown' ? 1 : -1;
-      container.scrollBy({
-        top: delta * window.innerHeight, // 每次滚动一整页的高度
-        behavior: 'smooth'
-      });
+    // 仅旋转点击对应的齿轮
+    gear.classList.add('rotating');
+
+    // 其他元素淡化
+    circles.forEach(circle => {
+      circle.parentElement.classList.add('faded');
+    });
+
+    // 展示个人简介泡泡
+    setTimeout(() => {
+      bioName.textContent = name;
+      bioDescription.textContent = description;
+      bioBubble.style.display = 'block';
+    }, 3000);
+  }
+
+  function closeBubble() {
+    const gears = document.querySelectorAll('.gear');
+    const circles = document.querySelectorAll('.circle');
+    const bioBubble = document.getElementById('bio-bubble');
+
+    // 关闭泡泡
+    bioBubble.style.display = 'none';
+
+    // 停止所有齿轮的旋转
+    gears.forEach(gear => gear.classList.remove('rotating'));
+
+    // 恢复其他元素
+    circles.forEach(circle => {
+      circle.parentElement.classList.remove('faded');
+    });
+  }
+
+  // 点击泡泡以外区域关闭泡泡
+  document.addEventListener('click', function(e) {
+    const bioBubble = document.getElementById('bio-bubble');
+    if (bioBubble.style.display === 'block' && !bioBubble.contains(e.target)) {
+      closeBubble();
     }
   });
 </script>
