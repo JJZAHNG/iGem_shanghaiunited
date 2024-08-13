@@ -1,34 +1,170 @@
 {% extends "layout.html" %}
 
-{% block title %}Team{% endblock %}
-{% block lead %}On this page you can introduce your team members, instructors, and advisors.{% endblock %}
-
 {% block page_content %}
-
-<div class="row">
-  <div class="col-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
-      <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
-      <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
-      <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
-    </ul>
-    <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+<div class="scroll-container">
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper">
+      <!-- 第一个SVG图片 -->
+      <img src="{{ url_for('static', filename='team_assets/team_member.svg') }}" alt="Team Member SVG Image">
+    </div>
   </div>
-  <div class="col-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
-      <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
-      <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
-      <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
-      <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
-      <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
-    </ul>
+
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper">
+      <!-- 第二个SVG图片 -->
+      <img src="{{ url_for('static', filename='team_assets/bubble.svg') }}" alt="Bubble SVG Image">
+    </div>
+  </div>
+
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper">
+      <!-- 第三个SVG图片 -->
+      <img src="{{ url_for('static', filename='team_assets/Rectangle34.svg') }}" alt="Rectangle34 SVG Image">
+    </div>
+  </div>
+
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper">
+      <!-- 第四个SVG图片 -->
+      <img src="{{ url_for('static', filename='team_assets/Rectangle35.svg') }}" alt="Rectangle35 SVG Image">
+    </div>
+  </div>
+
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper-top">
+      <!-- 第五个SVG图片，距离页面顶部30px，并且水平居中 -->
+      <img src="{{ url_for('static', filename='team_assets/WetLab.svg') }}" alt="WetLab SVG Image">
+    </div>
+    <div class="circle-container">
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p1.svg') }}'); border-color: #447C94;">
+        <div class="name-tag" onclick="handleClick()"> <!-- 名字标签 -->
+          <img src="{{ url_for('static', filename='team_assets/tag1.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p2.svg') }}'); border-color: #F3C52C;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag2.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p3.svg') }}'); border-color: #C25B3A;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag3.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p4.svg') }}'); border-color: #4D5D31;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag4.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+    </div>
+    <div class="circle-container">
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p5.svg') }}'); border-color: #3C5923;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag5.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p6.svg') }}'); border-color: #C25B3A;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag6.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p7.svg') }}'); border-color: #3C5923;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag7.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+      <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/p8.svg') }}'); border-color: #447C94;">
+        <div class="name-tag" onclick="handleClick()">
+          <img src="{{ url_for('static', filename='team_assets/tag8.svg') }}" alt="Name Tag">
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+  .scroll-container {
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    will-change: transform;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-item {
+    width: 100vw; /* 宽度撑满整个屏幕 */
+    height: 100vh; /* 高度撑满整个屏幕 */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .team-container {
+    position: relative; /* 确保子元素相对于此容器定位 */
+    background: linear-gradient(225deg, #FCF19F 0%, #ACE4B5 100%);
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .svg-wrapper-top {
+    position: relative; /* 确保相对定位 */
+    margin-top: 10px; /* 距离页面顶部10px */
+    text-align: center; /* 水平居中 */
+    width: 100%; /* 确保宽度为100% */
+  }
+
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* 行间距 */
+    width: 100%;
+    position: relative; /* 使名字标签相对于父元素定位 */
+  }
+
+  .circle {
+    width: 170px;
+    height: 170px;
+    background-size: cover; /* 确保背景图片覆盖整个圆 */
+    background-position: center; /* 居中显示背景图片 */
+    border-radius: 50%;
+    margin: 30px 20px; /* 调整圆形之间的间距 */
+    border: 5px solid; /* 添加边框 */
+    position: relative; /* 使名字标签相对于圆圈定位 */
+  }
+
+  .name-tag {
+    position: absolute;
+    bottom: -40px; /* 调整这个值，使名字标签覆盖圆圈的下方 */
+    left: 50%; /* 使标签居中 */
+    transform: translateX(-50%); /* 水平居中对齐 */
+    cursor: pointer; /* 鼠标变成手型 */
+  }
+</style>
+
+<script>
+  document.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const container = document.querySelector('.scroll-container');
+    const delta = Math.sign(e.deltaY);
+    container.scrollBy({
+      top: delta * window.innerHeight, // 每次滚动一整页的高度
+      behavior: 'smooth'
+    });
+  }, { passive: false });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      const container = document.querySelector('.scroll-container');
+      const delta = e.key === 'ArrowDown' ? 1 : -1;
+      container.scrollBy({
+        top: delta * window.innerHeight, // 每次滚动一整页的高度
+        behavior: 'smooth'
+      });
+    }
+  });
+</script>
 
 {% endblock %}
