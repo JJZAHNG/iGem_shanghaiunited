@@ -104,13 +104,57 @@
       </div>
     </div>
   </div>
+
+  <div class="scroll-item team-container">
+    <div class="svg-wrapper-top">
+      <!-- 第五个SVG图片，距离页面顶部10px，并且水平居中 -->
+      <img src="{{ url_for('static', filename='team_assets/DryLab.svg') }}" alt="WetLab SVG Image">
+    </div>
+    <div class="circle-container">
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear1.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/wp1.svg') }}');
+        border-color: #447C94;">
+          <div class="name-tag" onclick="handleClick(this, 'Xinyi Wang', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+            <img src="{{ url_for('static', filename='team_assets/tag1.svg') }}" alt="Name Tag">
+          </div>
+        </div>
+      </div>
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear2.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/wp2.svg') }}');
+        border-color: #F3C52C;">
+          <div class="name-tag" onclick="handleClick(this, 'Yue Meng Li', 'Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.')">
+            <img src="{{ url_for('static', filename='team_assets/tag2.svg') }}" alt="Name Tag">
+          </div>
+        </div>
+      </div>
+      <div class="circle-wrapper">
+        <div class="gear" style="background-image: url('{{ url_for('static', filename='team_assets/gear3.svg') }}');"></div>
+        <div class="circle" style="background-image: url('{{ url_for('static', filename='team_assets/wp3.svg') }}');
+        border-color: #C25B3A;">
+          <div class="name-tag" onclick="handleClick(this, 'Muyan Li', 'In condimentum facilisis porta. Sed nec diam eu diam mattis viverra.')">
+            <img src="{{ url_for('static', filename='team_assets/tag3.svg') }}" alt="Name Tag">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 </div>
 
 <!-- 个人简介弹出泡泡 -->
 <div id="bio-bubble" class="bio-bubble">
-  <h3 id="bio-name"></h3>
-  <p id="bio-description"></p>
-  <button onclick="closeBubble()">Close</button>
+  <div class="bio-content">
+    <h3 id="bio-name"></h3>
+    <p id="bio-description"></p>
+  </div>
+  <div class="bio-footer">
+    <button class="back-button" onclick="closeBubble()">
+      <!-- 背景图片按钮 -->
+      <img src="{{ url_for('static', filename='team_assets/message_button.svg') }}" alt="Back Button">
+    </button>
+  </div>
 </div>
 
 <style>
@@ -193,20 +237,56 @@
   }
 
   .bio-bubble {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+  display: none;
+  width: 1476px;
+  height: 774px; /* 632px + 142px */
+  background: #EFDB9D;
+  border-radius: 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
 
-  .bio-bubble h3 {
-    margin-top: 0;
+  .bio-content {
+    width: 100%;
+    height: 632px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #2D2D2D;
+  }
+
+  .bio-footer {
+    width: 100%;
+    height: 142px;
+    background: #4C5D32;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  .back-button {
+    width: 302px;
+    height: 105px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .back-button img {
+    width: 100%;
+    height: auto;
   }
 
   /* 模糊和淡化效果 */
