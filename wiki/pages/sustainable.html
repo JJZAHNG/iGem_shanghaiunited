@@ -1,33 +1,461 @@
 {% extends "layout.html" %}
-  
-{% block title %}Sustainable Development Goals{% endblock %}
-{% block lead %}Describe how you have evaluated your project ideas against one or more of the SDGs.{% endblock %}
 
 {% block page_content %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='sustainable_assets/banner.svg') }}" alt="Sustainable Image">
+</div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Sustainable Development</h4>
-      <p>The Sustainable Development Goals (SDGs) are a call to action to integrally address global environmental, social, and economic challenges. As the future leaders of synthetic biology research and innovation, it’s your responsibility to participate in the global conversations to help develop solutions towards meeting the SDGs. We encourage you to demonstrate how you have evaluated your project ideas against one or more of the SDGs, how you’ve consulted with SDG stakeholders, and how you’ve begun to form collaborations with other iGEM teams around the SDGs. You’re encouraged to look back at previous iGEM projects to evaluate them against the SDGs and build upon them.</p>
-      <p>To compete for the Best Sustainable Development prize, select the prize on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a> and describe your work on this page.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2024 Awards Page</a> for more information.</p>
+<div class="main-container">
+    <div class="index-container">
+        <div class="index-header">
+            <div class="index-image"></div>
+            <h3>Sustainability</h3>
+        </div>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#sdg3">SDG #3</a></li>
+            <li><a href="#sdg4">SDG #4</a></li>
+            <li><a href="#sdg13">SDG #13</a></li>
+            <li><a href="#sdg15">SDG #15</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
     </div>
-  </div>
+
+    <div class="content-container">
+        <!-- Right-side content area -->
+        <h2 id="overview" class="medium-text">Overview</h2>
+        <p class="small-text">Desertification affects over 100 countries, causing crop failures, poverty, and famine.
+            The issue is worsening, reducing biodiversity and creating a vicious cycle of land degradation. Tree
+            planting is a solution, with efforts like the UNCCD's Great Green Wall Initiative aiming to restore land.
+            Improving soil water retention can enhance vegetation survival. Our team plans to use a bacteria called
+            Komagatataeibactor xylinus DSM 6513 for this purpose, offering new possibilities for desert restoration.
+        </p>
+
+        <h3 id="sdg3" class="small-text">SDG #3</h3>
+        <h4 class="small-text">SDG Summary</h4>
+        <p class="small-text">The United Nations has set multiple goals to achieve good health and well-being for all,
+            with the most important being to ensure healthy lifestyles and reduce the incidence of diseases.
+
+            Bacterial cellulose (BC) is a product that can effectively reduce water loss from the soil.
+            Our team will improve the genes of Komagataeibacter xylinus to enable it to produce more cellulose, thereby
+            reducing soil water loss, lowering the cost of tree planting in deserts, reducing water waste, mitigating
+            air pollution, and decreasing the probability of people getting diseases.
+
+            This will create more possibilities and opportunities for increasing the total vegetation in deserts.
+        </p>
+        <h4 class="small-text">Problem Identifications
+            Problem#1 - Intensification of Natural Disasters:
+        </h4>
+        <p class="small-text">Land desertification leads to the intensification of natural disasters, with the frequent
+            occurrence of sandstorms being the most evident manifestation.
+
+            During the process of desertification, the reduction of surface vegetation and the decline in soil
+            consolidation capacity make sand and dust more prone to being blown up by the wind.
+
+            This not only affects the local ecosystem but also has the potential to cause severe impacts on surrounding
+            areas and even further regions. Frequent sandstorms not only damage crops but may also disrupt
+            transportation and people's daily lives.
+            Additionally, sandstorms can trigger other natural disasters such as floods and debris flows, further
+            exacerbating the chain reaction of disasters.
+
+
+        </p>
+        <h4 class="small-text">Problem#2 - The Available Land Resources Are Reduced:</h4>
+        <p class="small-text"> Desertification has led to a reduction in available land resources.
+
+            Since the 1950s, a large amount of arable land, grassland and forest land in China have been converted into
+            sandy land, such as the Houshan area of the Wulanchabu League in Inner Mongolia and the Alxa region, as well
+            as the lower reaches of the Tarim River in Xinjiang.
+
+            The average degree of desertification in these areas has increased by more than 4%, resulting in thousands
+            of herders becoming "ecological refugees" and being forced to migrate.
+
+            According to the data of the State Forestry Administration of China, at the end of the 20th century,
+            desertification expanded at a rate of 3,436 square kilometers per year, and every five years, an area
+            equivalent to the size of Beijing lost its use value, affecting a population of 170 million.
+        </p>
+        <h4 class="small-text">Problem#3 - Environmental Pollution:</h4>
+        <p class="small-text">The impact of land desertification on environmental pollution is mainly reflected in the
+            following aspects: firstly, sandstorms occur frequently in desertified areas, and a large amount of dust is
+            blown into the atmosphere, causing atmospheric pollution.
+
+            Secondly, during the process of desertification, nutrients and organic matter in the soil are eroded by wind
+            or water, and these substances enter the water body, which may lead to eutrophication or deterioration of
+            water quality.
+            In addition, desertification may also affect regional climate, which in turn affects precipitation
+            distribution and atmospheric stability, indirectly exacerbating environmental pollution.
+
+            Overall, land desertification not only directly affects the quality of the atmosphere and water bodies, but
+            also indirectly exacerbates environmental pollution by changing the climate.
+        </p>
+        <h4 class="small-text">Solutions to each problem</h4>
+        <h4 class="small-text">Solution to Problem#1 - Bacterial Cellulose (BC) Can Significantly Reduce Water
+            Loss:</h4>
+        <p class="small-text">The reason that BC can prevent water loss is that the OH group and methyl in nanocellulose
+            can form hydrogen bonds with water molecules, and absorb water molecules.
+
+            Water molecules are fixed on the surface of nanocellulose, so a membrane is formed, which can help to
+            prevent water loss.
+        </p>
+        <h4 class="small-text">Solution to Problem#2 - Bacterial Cellulose (BC) Can Increase Survival Rate of
+            Vegetation:</h4>
+        <p class="small-text">The bacterial cellulose is a smart biomaterial, an extracellular biopolymer synthesized by
+            several bacteria belonging to the genera Acetobacter, Komagataeibacter, Agrobacterium, Bacillus, and
+            Clostridium Botulin.
+            The nanofibrous network constituting the BC structure consists of well-aligned three-dimensional nanofibers
+            forming a high surface area and porous hydrogel layer.
+
+            There are many advantages of bacterial cellulose. So BC can prevent water loss to make the vegetation
+            survive easily and can increase the amount of vegetation to increase the available land area.
+
+            This can help us have more opportunities and possibility for sustainable human development.
+        </p>
+        <h4 class="small-text">Solution to Problem#3 - Bacterial Cellulose (BC) Is a Environmental Friendly
+            Biomaterials:</h4>
+        <p class="small-text">First, BC can be obtained purely from the culture medium and actively excreted by the
+            cells without any purification process.
+
+            Secondly, BC naturally has high purity, high crystallinity, high water storage capacity, high degree of
+            polymerization, high surface area, and chemical stability.
+
+            Which means that BC is capable of increasing water storage at the root part of the plant, as it’s
+            eco-friendly and sustainable.
+
+            Lastly, compared with other chemical high water storage capacity materials, such as Hydrogel, PAM, and CMC.
+
+            They are usually expensive and can be broken up into some chemicals which cause leakage and pollution.
+
+            So BC can reduce the pollution and it can enhance the survival rate of vegetation can further prevent the
+            pollution of sandstorms which caused by land desertification and the pollution of greenhouse gases in the
+            air.
+        </p>
+
+        <h3 id="sdg4" class="small-text">SDG #4</h3>
+        <h4 class="small-text">SDG Summary</h4>
+        <p class="small-text"> The fourth sustainable development goal aims to provide inclusive and equitable quality
+            education and promote lifelong learning opportunities for all human beings (1). For this to be achieved, the
+            UN set out the quality education challenge to be completed by 2030, which aims to provide completely free,
+            equitable, and quality primary and secondary education, leading to relevant and effective learning outcomes
+            for all children (1).
+        </p>
+        <h4 class="small-text">Problem Analysis</h4>
+        <p class="small-text"> Regarding teaching about the greenhouse effect, which is an essential part of reducing
+            greenhouse gases, there are two problems that China and the world need to face.
+        </p>
+        <h4 class="small-text">Problem Identification</h4>
+        <h4 class="small-text">Problem#1: the scarcity of resources for quality education:</h4>
+        <p class="small-text"> A central part of ensuring everyone has quality education is to ensure that all learners
+            acquire the knowledge and skills needed to promote sustainable development, including, among others, through
+            education for sustainable development and sustainable lifestyles(1). In reality, not every child has the
+            ability to afford the high fees of education, especially university students(1)
+        </p>
+        <h4 class="small-text">Problem#2:insufficient socioeconomic:</h4>
+        <p class="small-text"> In rural parts of China, for example, in Inner Mongolia, the loss of money directly
+            because of desertification is 64 billion. (2)Therefore, less money will be invested in education. As a
+            result, fewer people can achieve literacy and numeracy.(1)
+        </p>
+        <h4 class="small-text">Solutions to each problem</h4>
+        <h4 class="small-text">Solution to problem#1:</h4>
+        <p class="small-text"> Our bacterial cellulose can let water molecules fix on the surface of nitrocellulose, so
+            a membrane is formed, which can help prevent water loss and increase the efficiency of water management.
+            Therefore, more money will be used for quality education.
+        </p>
+        <h4 class="small-text">Solution to problem#2:</h4>
+        <p class="small-text"> There are many advantages of bacterial cellulose. So, BC can prevent water loss, make the
+            vegetation survive easily, and increase the amount of vegetation available in the land area. So that more
+            profit will be gained and socioeconomics will be more sufficient. This can help us have more opportunities
+            and possibilities for sustainable human development.
+        </p>
+
+
+        <h3 id="sdg13" class="small-text">SDG #13</h3>
+        <h4 class="small-text">SDG Summary</h4>
+        <p class="small-text">Climate change caused by humans’ actions is harming nature all the time. It’s putting
+            negative impacts on people all around the world such as disturbing the national economy, agriculture
+            production, effect life qualities and letting people and earth’s future become worse. As the strongest, most
+            intelligent species of earth, we humans should pay effort to fix nature and do some climate actions to stop
+            climate change, help earth from disintegration. One main way to stop climate change is botany planting:
+            plants will absorb some types of greenhouse gases like CO2, and that could decrease the rate of temperature
+            increasing.
+        </p>
+        <h4 class="small-text">Problem Identifications</h4>
+        <h4 class="small-text"> Problem#1: Global warming and glaciers melting:</h4>
+        <p class="small-text">The increase of greenhouse gases in the atmosphere is stopping the temperature decrease by
+            blocking the reflection of sunlight, people cut down trees and let the consumers of greenhouse gases
+            decrease. That will cause the earth’s atmosphere to contain much more greenhouse gases than earth can solve
+            by itself. Thus, more energy comes in and less energy leaves, causing the temperature of earth surface to
+            keep increasing. Thing coming next is the melt of glaciers. During the spring and summer, ice in polar areas
+            will melt because the temperature is above 0℃, and the globally increase temperature rising will make more
+            ice melt, and less ice form and freeze when temperature is under 0℃. This led to the rise of
+            sea level, many lower areas like southeast Asia will be eroded, the soil degradation will apply to those
+            areas.
+        </p>
+        <h4 class="small-text"> Problem#2: desertification and degradation</h4>
+        <p class="small-text">By human’s actions like mining, cutting down trees and so on will make the water retention
+            ability of the soil decrease, nutrients will easily flow away with water and wind. Desertification does not
+            refer to the physical expansion of existing deserts, but rather to the various processes that threaten all
+            dryland ecosystems, including deserts as well as grasslands and shrubbery. Thus, desertification will lead
+            many consequences, such as crop failure or reduced yields on rain-fed farmland, loss of perennial plant
+            cover, loss of livestock feed, reduced
+            woody biomass, resulting in shortages of fuelwood and building materials, reduced stocks of potable water
+            due to reduced surface and groundwater flows, increased intrusion of sand dunes into farmland and
+            settlements, and increased flooding due to increased sediment in rivers and lakes. Dust and sediment add to
+            air and water pollution. In these environments and areas, local creatures will die fast; and because the
+            desertification will spread un-naturally, the creatures living nearby will also be affected. Plants are
+            hardly survived, so these desertificated area are hard to be de- desertificated.
+        </p>
+        <h4 class="small-text">How our project applies (solution to the problems):</h4>
+        <p class="small-text">Tree planting is not hard, but in lots of places that are covered by sands and deserts,
+            trees will easily die because of deficiency of water. This is what our project is trying to solve. Our
+            project are going to use “Komagataeibacter xylinus DSM 6513” ← this bacterium to save the world. DSM is a
+            kind of Komagataeibacter xylinus, which can produce mostly the most bacterial cellulose in all kinds of
+            bacteria that human discovered. The bacterial cellulose (called BC In the under texts) are a very, very nice
+            kind of water retention materials. BC is biocompatible, biodegradable, and renewable compared to other water
+            retention materials such as Hydrogel, Polyacrylamide (PAM), Sodium carboxymethyl cellulose, this means with
+            produce extra BC with Komagataeibacter xylinus and put them under the soil of plants’
+            roots, the plant could live bigger, better, stronger because the BC could help them to retain water for
+            longer time. By using this material from the Genetically modified Komagataeibacter xylinus over-production
+            of BC, it’s possible for many un-natural deserts to plant trees, and de-desertificate these lands, reduce
+            the level of the greenhouse gas in the atmosphere under control and back to normal, we can solve the problem
+            of climate changes and the tragedies it brings to humans and animals on earth.
+        </p>
+
+
+        <h3 id="sdg15" class="small-text">SDG #15</h3>
+        <h4 class="small-text">SDG Summary</h4>
+        <p class="small-text"> Terrestrial organisms face multiple challenges, including rapid loss of biodiversity,
+            habitat destruction, environmental pollution, and the impact of climate change. Addressing these issues
+            requires global cooperation and joint efforts, through the development and implementation of effective
+            protection measures, raising public awareness, strengthening scientific research and monitoring, and other
+            means.
+        </p>
+        <h4 class="small-text">Problem Identifications </h4>
+        <h4 class="small-text">Problem#1: Loss of biodiversity:</h4>
+        <p class="small-text"> Globally, biodiversity loss is affecting the world, especially in Latin America where
+            species richness has decreased by 94% over the past 40 years, making it one of the most severe regions in
+            the world. This phenomenon reflects changes in land and ocean use, including habitat loss and degradation,
+            which are the biggest threats to biodiversity.
+        </p>
+        <h4 class="small-text">Problem#2: Habitat destruction: :</h4>
+        <p class="small-text"> The threat of land degradation to biodiversity is a serious issue that requires increased
+            investment in biodiversity conservation, the protection of important ecosystems and species, and preserving
+            and restoring habitats for endangered species.
+
+        </p>
+        <h4 class="small-text">Problem#3: Land degradation:</h4>
+        <p class="small-text"> It refers to the succession process in which the internal structure and physical and
+            chemical properties of the land are altered or destroyed by human or natural factors, or a combination of
+            human and natural factors. As the land environment becomes increasingly harsh, the comprehensive production
+            potential of the land is gradually reduced or lost.
+        </p>
+        <h4 class="small-text">Problem#4: Climate change:</h4>
+        <p class="small-text"> The long-term impact of climate change has not been fully assessed, but it includes
+            issues like global warming and so on. The potential impact on biodiversity cannot be ignored and requires
+            further research and response measures.
+        </p>
+        <h4 class="small-text">Solutions to each problem:</h4>
+        <p class="small-text">
+            1. Our team focused on using genetically modified Komagataeibacterium xylinus to relieve or even solve the
+            problem of desertification completely. Desertification is a global environmental problem that not only
+            affects land productivity and ecosystem
+            stability but also poses a serious threat to biodiversity. Preventing and controlling desertification is one
+            of the key measures to protect and restore terrestrial ecosystems and promote sustainable use of natural
+            resources, which is why our project can further prevent the loss of biodiversity.<br>
+
+            2. By increasing the water holding, the efficiency of replantation will increase, therefore bringing more
+            potential solutions to preventing desertification. Then the number of forests will increase, thereby
+            creating more habitats for animals that rely on trees to survive. For instance, pandas and golden monkeys
+            are endangered animals because of the destruction of their habitats. Protecting threatened species and
+            preventing their extinction is an important component of
+            comprehensive measures to combat desertification.<br>
+
+            3. Through preventing and controlling desertification, degraded land and soil, including those affected by
+            desertification, drought, and floods, can be restored, thus striving to establish a world where land
+            degradation no longer occurs. The achievement of this goal is particularly important for protecting mountain
+            ecosystems and their biodiversity, as it helps strengthen the ability of ecosystems to provide essential
+            benefits for sustainable development. ‌<br>
+
+            4. Efforts to combat desertification not only contribute to improving the ecological environment but are
+            also key measures to address climate change. By implementing measures such as afforestation and vegetation
+            restoration, the exposed surface area can be effectively reduced, and wind and water erosion can be
+            minimized, thereby slowing down the rate of land degradation. In addition, vegetation restoration can
+            promote soil moisture retention, increase carbon storage, and enhance the carbon sequestration capacity of
+            ecosystems to combat global warming.<br>
+        </p>
+
+        <h2 id="conclusion" class="medium-text">Conclusion</h2>
+        <p class="small-text">To maximize our production and global impact, we are committed to achieving four
+            sustainable development goals: Good Health and Well-being, Quality Education, Climate Action, and Life on
+            Land.
+        </p>
+        <p class="small-text">This picture illustrates how to knock out and overexpressing the gene. We are going to
+            design the carrier with the modified gene and then use electro-transformation to add the carrier into the
+            plasma. Use the PGI gene as an example, the blue part represents hundreds of base pair before the PGI gene,
+            which help us to find the exact position to overexpress. Then the blue crosses over with the blue, and red
+            crosses over with red, therefore leading the black overexpressing gene to the PGI gene. In the example of
+            the GDH gene. A double crossover took place, the blue gene crossed over with blue, red crossed over with
+            red, and the black gene alone, which has been knocked out. We are also going to add resistance genes to
+            check whether the gene editing is successful or not with PCR.
+
+            We believe that the gene editing on Komagataeibacter xylinus DSM 6513 can bring a better future to solve
+            global issues and bring a better planet for future humans.
+        </p>
+
+        <h2 id="references" class="medium-text">References</h2>
+        <p class="small-text">
+            (1)Goal 4: Quality Education - United Nations Sustainable Development [Internet]. United Nations. United
+            Nations; [cited 2022Oct7]. Available from: https://sdgs.un.org/goals/goal4 <br>
+            (2)transfer from: http://env.people.com.cn/n1/2020/0618/c1010-31751883.html <br>
+            (3)Https://www.britannica.com/science/desertification <br>
+            (4)https://www.un.org/sustainabledevelopment/climate-action/ <br>
+            (5)https://2024.igem.wiki/hw-shanghaiunited/description<br>
+        </p>
+    </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2020.igem.org/Team:Calgary/Sustainable">2020 Calgary</a></li>
-      <li><a href="https://2020.igem.org/Team:Toulouse_INSA-UPS/Sustainable">2020 Toulouse INSA UPS</a></li>
-      <li><a href="https://2020.igem.org/Team:TUDelft/Sustainable">2020 TUDelft</a></li>
-      <li><a href="https://2020.igem.org/Team:Lambert_GA/Sustainable">2020 Lambert GA</a></li>
-    </ul>
-  </div>
-</div>
+<style>
+    body {
+        background: linear-gradient(180deg, #D7D98A 0%, #9BA880 100%);
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+        width: 100%;
+        max-height: 842px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 1487px;
+        height: 842px;
+        object-fit: cover;
+    }
+
+    .main-container {
+        display: flex;
+        padding: 20px;
+    }
+
+    .index-container {
+        width: 350px;
+        padding: 20px;
+        background-color: #719057;
+        border-radius: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+    }
+
+    .index-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .index-image {
+        width: 208px;
+        height: 201px;
+        background: url('{{ url_for(' static ', filename=' sustainable_assets/logo_index.svg ') }}') lightgray 50 % / cover no-repeat;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-color: transparent;
+    }
+
+    .index-container h3 {
+        color: #F7F0D2;
+        font-family: "Abhaya Libre";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .index-container ul {
+        list-style-type: none;
+        padding: 0;
+        color: #F7F0D2;
+    }
+
+    .index-container ul ul {
+        margin-left: 20px; /* Indent for nested list */
+    }
+
+    .index-container ul li {
+        margin-bottom: 10px;
+    }
+
+    .index-container ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .index-container ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .content-container {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #F7F0D2;
+        border-radius: 20px;
+        color: #333;
+    }
+
+    .content-container h2, .content-container h3, .content-container h4 {
+        margin-top: 20px;
+        color: #0F96DB;
+        text-align: left;
+        scroll-margin-top: 130px;
+    }
+
+    .content-container p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Large text */
+    .large-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    /* Medium text */
+    .medium-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    /* Small text with indentation */
+    .small-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+        padding-left: 20px; /* Indent */
+    }
+</style>
 
 {% endblock %}

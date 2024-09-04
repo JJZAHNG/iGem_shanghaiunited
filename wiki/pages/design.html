@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='design_assets/banner.svg') }}" alt="Design Image">
+</div>
+
+<div class="main-container">
+    <div class="index-container">
+        <div class="index-header">
+            <div class="index-image"></div>
+            <h3>Design</h3>
+        </div>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <ul>
+                <li><a href="#gdh">1. Why choose GDH gene</a></li>
+                <li><a href="#pgi">2. Why choose PGI gene</a></li>
+                <li><a href="#komagataeibacter">3. Why choose Komagataeibacter xylinus DSM 6513</a></li>
+            </ul>
+            <li><a href="#methods">For higher production of bacterial cellulose, we design a few methods</a></li>
+            <ul>
+                <li><a href="#edition">1. Edition to the Gene of Komagataeibacter xylinus</a></li>
+                <li><a href="#optimize">2. Optimize the shake incubator speed and nutrient medium component</a></li>
+            </ul>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <!-- Right-side content area -->
+        <h2 id="overview" class="medium-text">Overview</h2>
+        <p class="small-text"> Our project goal is to design a High-bacterial Cellulose production Bacteria and use it
+            in multiple aspect. For example, to help solve the desertification problem or help to recover open wounds.
+            We used the DNA PGI from the E. coli (allows bacteria to produce more bacterial cellulose) and applied it on
+            Komagataeibacter xylinus DMS-6514, a naturally high-bacterial cellulose producer bacterium. After, we
+            knocked out the GDH gene (the gene that produce glucose dehydrogenase). At last, we lest on the best
+            environment setting of culturing the Komagataeibacter xylinus DMS-6514.</p>
+
+        <h3 id="gdh" class="small-text">1. Why choose GDH gene</h3>
+        <p class="small-text"> Bacterial cellulose can be produced from two substrates, glucose and fructose. GDH gene
+            is the gene of membrane-bound glucose dehydrogenase. Glucose dehydrogenase is responsible for catalyzing the
+            process of converting glucose to gluconic acid, using glucose as substrate, which means there will be less
+            glucose for bacterial cellulose production. Thus, we decide to knockout the gene of GDH, and reduce the
+            amount of gluconic acid production, so there will be more bacterial cellulose produced.</p>
+
+        <h3 id="pgi" class="small-text">2. Why choose PGI gene</h3>
+        <p class="small-text"> In the biosynthetic pathway of bacterial cellulose, the the presence of
+            glucose-6-phosphate isomerase(PGI), fructose-6-phosphate can be catalyzed to produce glucose-6-phosphate,
+            which is promising to enhance the metabolic flow of bacterial cellulose production. Hence, overexpessing the
+            PGI gene can promote the bacterial cellulose production. </p>
+
+        <h3 id="komagataeibacter" class="small-text">3. Why choose Komagataeibacter xylinus DSM 6513</h3>
+        <p class="small-text"> Komagataeibacter xylinus DSM 6513 belongs to the groups of strains that are natural
+            producers of bacterial cellulose, and has higher yields of bacterial cellulose production than other
+            strains. Therefore, after the process of gene editing, bacterial cellulose can be produced more than before
+            in K.xylinus, and the yields can increase significantly. </p>
+
+        <h2 id="methods" class="medium-text">For higher production of bacterial cellulose, we design a few methods</h2>
+        <h3 id="edition" class="small-text">1. Edition to the Gene of Komagataeibacter xylinus</h3>
+        <p class="small-text"> Komagataeibacter xylinus is naturally high productive bacteria for producing bacterial
+            cellulose, it have plenty amount of cellulase gene and produce plenty amount of cellulase for producing
+            cellulose. However, the problem is that the k.xylinus have a GDH gene, which produce GDH (Glucose
+            dehydrogenase). This enzyme can make glucose to glucose acid——a material that research currently found that
+            it seems have no big effect on bacteria. Thus, we knocked out the GDH gene of k. xylinus strains by
+            Homologous Recombination to make sure less glucose are used except from production of cellulose and life
+            sustaining. More glucose then can be use in bacterial cellulose production.
+            PGI gene(presence of glucose-6-phosphate isomerase) is a common found gene in bacteria. In the biosynthetic
+            pathway of bacterial cellulose, in the presence of glucose-6-phosphate isomerase (PGI), fructose 6-phosphate
+            can be catalysed to produce glucose 6-phosphate, which is promising to enhance the metabolic flow of BC
+            production. </p>
+        <p>From this metabolic diagram, pgi has the function of catalyzing the conversion of fructose 6-p to glucose
+            6-p, which is the substrate for the synthesis of bacterial cellulose, so for this reason, the more pgi
+            activity and amount are present, the more bacterial cellulose will be produce.
+            According the research of KAIST on pgi and k.xylinus, the pgi produce by E.coli pgi gene have a relatively
+            high specific activity compare to many other microorganisms. This mean the E.coli pgi gene is specially
+            better in the way that we want: produce more substrate of BC production. We insert the pgi gene from E.coli
+            into k.xylinus by plasmids.</p>
+        <h3 id="optimize" class="small-text">2. Optimize the shake incubator speed and nutrient medium component</h3>
+        <p class="small-text"> Komagataeibacter xylinus have a high production on bacterial cellulose, but it have a
+            relatively low rate of reproduction during cultivating, thus we have to design to find a best environment
+            both for its BC production and reproduction. In the study: Effect of Culture Conditions on Cellulose
+            Production by a Komagataeibacter xylinus Strain, it mentioned that the spontaneous mutation of
+            Komagataeibacter xylinus from Cel+ strain to Cel- strain could severely decrease the production of bacterial
+            cellulose. The main reason of this mutation is proved to be the shear force of cultivating
+            environment——under shake cultivation, the addition of xanthan gum will decrease the possibility for the
+            K.xylinus to mutate to Cel- strain, thus increase the production of the BC. For know the exact environment
+            for peak value of BC production, we designed the experiment and set 3 measures of the concentration of
+            xanthan gum (0, 0.02%, 0.03%, 0.05%) and 3 different speed of shake incubator (50rmp，125rmp，200rmp), and map
+            the growing rate curve graph base on the result. </p>
+
+        <h2 id="references" class="medium-text">References</h2>
+        <p class="small-text">
+            1. 10.1002/bit.27150 <br>
+            2. https://doi.org/10.1002/mabi.202100476 <br>
+            3. https://doi.org/10.1093/jimb/kuab071 <br>
+            4. https://doi.org/10.1080/21655979.2021.1968989</p>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(180deg, #D7D98A 0%, #9BA880 100%);
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+        width: 100%;
+        max-height: 842px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 1487px;
+        height: 842px;
+        object-fit: cover;
+    }
+
+    .main-container {
+        display: flex;
+        padding: 20px;
+    }
+
+    .index-container {
+        width: 350px;
+        padding: 20px;
+        background-color: #719057;
+        border-radius: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+    }
+
+    .index-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .index-image {
+        width: 208px;
+        height: 201px;
+        background: url('{{ url_for(' static ', filename=' design_assets/logo_index.svg ') }}') lightgray 50 % / cover no-repeat;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-color: transparent;
+    }
+
+    .index-container h3 {
+        color: #F7F0D2;
+        font-family: "Abhaya Libre";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .index-container ul {
+        list-style-type: none;
+        padding: 0;
+        color: #F7F0D2;
+    }
+
+    .index-container ul ul {
+        margin-left: 20px; /* Indent for nested list */
+    }
+
+    /* Third-level list shows bullet points */
+    .index-container ul ul ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    .index-container ul li {
+        margin-bottom: 10px;
+    }
+
+    .index-container ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .index-container ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .content-container {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #F7F0D2;
+        border-radius: 20px;
+        color: #333;
+    }
+
+    .content-container h2, .content-container h3, .content-container h4 {
+        margin-top: 20px;
+        color: #0F96DB; /* Title color */
+        text-align: left;
+        scroll-margin-top: 130px;
+    }
+
+    .content-container p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Large text */
+    .large-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    /* Medium text */
+    .medium-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    /* Small text with indentation */
+    .small-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+        padding-left: 20px; /* Indent */
+    }
+</style>
+
+{% endblock %}

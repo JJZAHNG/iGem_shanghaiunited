@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,9 @@
 
 </head>
 <body>
-  <!-- Navigation -->
-  <div class="navbar">
+<!-- Navigation -->
+<!-- Navigation -->
+<div class="navbar">
     <div class="logo">
         <img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo">
         <div class="brand">
@@ -23,66 +24,69 @@
         </div>
     </div>
     <div class="nav-links">
-      <div class="dropdown">
-        <a href="/">Home</a>
-        <div class="dropdown-content">
-          <a href="/home-sub1">Home Sub1</a>
-          <a href="/home-sub2">Home Sub2</a>
+        <div class="dropdown">
+            <a href="/">Home</a>
         </div>
-      </div>
-      <div class="dropdown">
-        <a href="/team">Team</a>
-        <div class="dropdown-content">
-          <a href="/team-sub1">Team Sub1</a>
-          <a href="/team-sub2">Team Sub2</a>
+        <div class="dropdown">
+            <a href="/team">Team</a>
+            <div class="dropdown-content">
+                <a href="{{ url_for('pages', page='team') }}">Team Members</a>
+                <a href="{{ url_for('pages', page='attribution') }}">Attribution</a>
+            </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <a href="/project">Project</a>
-        <div class="dropdown-content">
-          <a href="/project-sub1">Project Sub1</a>
-          <a href="/project-sub2">Project Sub2</a>
+        <div class="dropdown">
+            <a href="#">Project</a>
+            <div class="dropdown-content">
+                <a href="{{ url_for('pages', page='description') }}">Description</a>
+                <a href="{{ url_for('pages', page='design') }}">Design</a>
+                <a href="{{ url_for('pages', page='parts') }}">Parts</a>
+                <a href="{{ url_for('pages', page='contribution') }}">Contribution</a>
+            </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <a href="/dry-lab">Dry Lab</a>
-        <div class="dropdown-content">
-          <a href="/dry-lab-sub1">Dry Lab Sub1</a>
-          <a href="/dry-lab-sub2">Dry Lab Sub2</a>
+        <div class="dropdown">
+            <a href="#">Dry Lab</a>
+            <div class="dropdown-content">
+                <a href="{{ url_for('pages', page='sustainable') }}">Sustainability</a>
+                <a href="{{ url_for('pages', page='education') }}">Education</a>
+                <a href="{{ url_for('pages', page='human-practices') }}">Human Practice</a>
+                <a href="{{ url_for('pages', page='model') }}">Model</a>
+            </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <a href="/experiment">Experiment</a>
-        <div class="dropdown-content">
-          <a href="/experiment-sub1">Experiment Sub1</a>
-          <a href="/experiment-sub2">Experiment Sub2</a>
+        <div class="dropdown">
+            <a href="#">Experiment</a>
+            <div class="dropdown-content">
+                <a href="{{ url_for('pages', page='results') }}">Results</a>
+                <a href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+                <a href="{{ url_for('pages', page='protocol') }}">Protocol</a>
+                <a href="{{ url_for('pages', page='safety') }}">Safety</a>
+            </div>
         </div>
-      </div>
-      <a href="/achievement">Achievement</a>
+        <a href="/achievement">Achievement</a>
     </div>
-  </div>
+</div>
 
-  <!-- Header -->
-  <header class="bg-hero py-5 mb-5">
+
+<!-- Header -->
+<header class="bg-hero py-5 mb-5">
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2">{{ self.title() }}</h1>
-	        <p class="lead mb-5 text-white-50">{% block lead %}{% endblock %}</p>
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">{{ self.title() }}</h1>
+                <p class="lead mb-5 text-white-50">{% block lead %}{% endblock %}</p>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
+</header>
 
-  <!-- Page Content -->
-  <div class="container">
+<!-- Page Content -->
+<div class="container">
     {% block page_content %}{% endblock %}
-  </div>
+</div>
 
-  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
-  {% include 'footer.html' %}
+<!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+{% include 'footer.html' %}
 
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>

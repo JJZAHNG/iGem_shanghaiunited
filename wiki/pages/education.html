@@ -1,35 +1,308 @@
 {% extends "layout.html" %}
-  
-{% block title %}Education{% endblock %}
-{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 
 {% block page_content %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='education_assets/banner.svg') }}" alt="Education Image">
+</div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Education</h4>
-      <p>How have you developed new opportunities to include more people in shaping synthetic biology? Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology. Document your approach and what was learned by everyone involved to compete for this award.</p>
-      <p>To compete for the Best Education prize, select the prize on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a> and describe your work on this page.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2024 Awards Page</a> for more information.</p>
+<div class="main-container">
+    <div class="index-container">
+        <div class="index-header">
+            <div class="index-image"></div>
+            <h3>Education</h3>
+        </div>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#primary">Primary Students</a></li>
+            <li><a href="#highschool">High School</a></li>
+            <li><a href="#igem">iGEM teams</a></li>
+        </ul>
     </div>
-  </div>
+
+    <div class="content-container">
+        <!-- Right-side content area -->
+        <h2 id="overview" class="medium-text">Overview</h2>
+        <p class="small-text"> Allan Bloom said that “Education is the movement from darkness to light” .We hope to
+            light up the pathway to Synthetic Biology for children in our community and all over the country. We aimed
+            to use the social media platforms to bring videos for students who aren’t able toaccess lab work, and lead
+            them to Synthetic Biology lab. We hope to leave no one behind. We also engage with museum and other
+            organization to collaborate and work for popularization of science.
+            The new generation need to know the global issues and work to improve them.
+            Base on these ideas and reason, we design our educational events and popular science videos. </p>
+
+        <h3 id="primary" class="small-text">Primary Students</h3>
+        <p class="small-text"> On June 23 2024, we attended the SymBiosis in Shanghai Pinghe high school. SymBiosis is a
+            exhibition run by high schools students in Shanghai, and attracted many parents bring their children from
+            7-14 to visit.
+            We aimed to introduce the concept of desertification, the current challenge of re-plantation, and possible
+            solutions to this problem.
+            Our main goal was to make people understand the importance of controlling desertification to protect our
+            earth. We wanted to expand the knowledge about gene editing method and geographic influence of
+            desertification to the middle school and primary school student. </p>
+        <h4 class="small-text">Introduce Desertification</h4>
+        <p class="small-text"> We focused on teaching and showing students the effects of desertification because it's
+            important for them to understand the serious consequences if we don't work to protect our Earth.
+            We have included some small facts about desertification, such as how much green land turns into desert each
+            year and how much land are covered by desert.
+            We also made a small model contains plant and soils as an example to demonstrate the effect of
+            desertification better. During the activity, we found that most student and their parents didn’t really
+            understand the concept of desertification. Most of them think desertification is just land turning into
+            desert simply, but it’s not. For this reason, people showed a high curiosity while we are explaining the
+            concept. </p>
+        <h4 class="small-text">Gene Editing Methods </h4>
+        <p class="small-text"> Apart from presenting desertification, we also present some area relate to molecular
+            biology.
+            For example, we teach them about the meaning of ZFN and TALEN.
+            To make primary school student understand the concept better, we added some picture with fun emoji, so they
+            can understand the meaning better. We also include some bacteria sample in culture dish in order to make
+            student patriciate on the topic better. After we presented how to use culture dish to cultivate bacteria,
+            some middle school student with basic biology knowledge showed great interest at molecular biology; they
+            also start to gain some high degree on molecular biology . </p>
+
+        <h4 class="small-text">Bacterial Cellulose and Future</h4>
+        <p class="small-text">We also introduced our ongoing iGEM project about a type of bacteria and cellulose. This
+            cellulose is very water-retaining and can be used on plants to improve their rate of surviving in the
+            desert. It's super helpful in fighting desertification, but it's also expensive.
+            Our goal is to improve its productivity by changing part of its DNA, which could significantly reduce its
+            cost. And we hope that more people can join us to help us achieve this goal. All for our planet, for a
+            better tomorrow.</p>
+        <h3 id="highschool" class="small-text">High School</h3>
+        <h4 class="small-text">School Talk in High School about SynBio and Environmental Issues</h4>
+        <p class="small-text"> Our school talk was in June before final exams, we chose to start the talk in Shanghai
+            Hongwen School as most members in our team are from this school which made us easier to meet each other
+            offline. </p>
+        <h4 class="small-text">Before the Talk</h4>
+        <p class="small-text"> We designed a bulletin board and hung it at the school. The purpose of the board is to
+            introduce iGEM which includes the competition itself, the history of iGEM, and the team members. It also
+            consists of the basic information and principles of genetic engineering.</p>
+        <h4 class="small-text">Talk about SynBio and Environmental Issues</h4>
+        <p class="small-text">On 14th June 2024, we gave a public speech in Chinese at the school theater begun at 2
+            o’clock in the afternoon. We invited students and teachers from the Hongwen High School department and
+            introduced the concepts of synthetic biology and climate crisis to the high school students.</p>
+        <h4 class="small-text">Environmental Issues</h4>
+        <p class="small-text"> During the presentation, two members exposed the current situation of desertification and
+            challenges of re-plantation.
+            The combined effects of natural factors and human activities have destroyed land resources, leading to a
+            decrease in available land for agriculture and animal husbandry, a decline in breeding capacity, a decrease
+            in livestock carrying capacity, and a decrease in crop unit area. We mentioned some specific things they
+            should do to protect the environment such as no wasting water and damaging plants on purpose. </p>
+        <h4 class="small-text">SynBio and Research Methods</h4>
+        <p class="small-text"> After explaining the background and purpose of our topic, our team introduced the
+            research sequence of our topic as an example of synthetic biology. We explained the production of bacterial
+            cellulose and introduced that by genetically engineering the bacteria to increase their cellulose
+            production, and potentially increase the efficiency in re-plantation </p>
+        <h4 class="small-text">Impact and Public Engagement</h4>
+        <p class="small-text"> At the end of the speech, our team noticed some other social platforms such as Bilibili
+            and wechat of the team for others who want to learn more about environmental issues and SynBio. </p>
+        <p class="small-text"> Desertification may seem far away from us, but the truth is that it not only directly
+            affects people's daily lives but also the whole planet.
+            Through this lecture, we hope everyone in the school will pay more attention to environmental protection and
+            natural ecological research in the future.
+            We wanted to evoke the curiosity and interest in SynBio to students who are not very familiar with this
+            subject.
+            Moreover, we hope everyone will support our team and our project. </p>
+
+        <h3 id="igem" class="small-text">iGEM teams</h3>
+        <p class="small-text"> The Conference of China iGEMer Community (CCiC) is a national exchange event initiated
+            independently by iGEM participating teams in China. It aims to provide a resource-sharing platform and
+            promote mutual learning and exchange among iGEM teams and young synthetic biology enthusiasts in China.
+            Since its first held in 2014, the CCiC Conference has played an important role in maintaining the positive
+            and good development of the community as a continuous focus of the CCiC Executive Committee, a national
+            exchange summit related to synthetic biology competitions in China, and an important academic communication
+            platform for young synthetic biology enthusiasts in China. It has received good feedback from all industry,
+            academia, and research sectors. At present, the CCiC Conference has become one of the largest academic
+            conferences for college students in China. </p>
+        <p class="small-text"> Our CCIC Our presentation is in three parts. In the first section, we will give some data
+            and background information about the problem we will solve by using a new modified bacteria: soil
+            desertification. In the second section, we will introduce bacterial cellulose with its properties. In the
+            last section, we will introduce the production of bacterial cellulose and outline the factors that affect
+            the production of bacterial cellulose. Then finally give out the specific gene we need to edit. We talked
+            about the definition of desertification: As global temperatures rise and the human population expands, more
+            of the planet is vulnerable to desertification, which causes land degradation and loss of productivity. The
+            factors that cause soil desertification can be arranged into two categories, human factors and natural
+            factors. Urbanization, mining, farming, and ranching are the main human factors causing soil
+            desertification. Drought and the type of soil are the natural factors. These will lead to soil erosion and
+            an inability of land to retain water or to regrow plants. So our goal is to solve this problem and figure
+            out how to prevent water and how to enhance the vegetation survival rate. </p>
+        <p class="small-text"> For how to enhance the vegetation survival rate, we decided to use a Bacterial Cellulose
+            (BC) called Komagataeibacter xylinus DSM 6513. This BC is a smart biomaterial, an extracellular biopolymer
+            synthesized by several bacteria belonging to the genera Acetobacter, Komagataeibacter, Agrobacterium,
+            Bacillus, and Clostridium Botulin. The nanofibrous network constituting the BC structure consists of
+            well-aligned three-dimensional nanofibers forming a high surface area and porous hydrogel layer. There are
+            many advantages of bacterial cellulose. The reason that BC can prevent water loss is that the OH group and
+            methyl in nanocellulose can form hydrogen bonds with water molecules, and absorb water molecules. Water
+            molecules are fixed on the surface of nanocellulose, so a membrane is formed, which can help to prevent
+            water loss.
+             First, BC can be obtained purely from the culture medium and actively excreted by the cells without any
+            purification process. Secondly, BC naturally has high purity, high crystallinity, high water storage
+            capacity, high degree of polymerization, high surface area, and chemical stability. This means that BC is
+            capable of increasing water storage at the root part of the plant, as it’s eco-friendly and sustainable.
+            Lastly, compared with other chemical high water storage capacity materials, such as Hydrogel, PAM, and CMC.
+            They are usually expensive and can be broken up into some chemicals which cause leakage and pollution </p>
+        <p class="small-text"> The production of BC is been produced by two substances, fructose, and glucose. As we can
+            see in this picture, some glucose and been catalyzed to glucose acid which reduces the production of
+            Glucose, which leads to the limited production of bacterial cellulose. On another path, some of the fructose
+            joins the TCA cycle and works for the energy required by the bacteria, this also limits the amount of
+            Fructose that can be catalyzed to glucose 1-P and leads to a small amount of production in bacterial
+            cellulose. However, we could not stop the path to the TCA cycle, otherwise, the cell would die because of
+            the lack of energy. Therefore, our plan for gene editing is to overexpress the PGI gene and knock out the
+            GDH gene.</p>
+        <p class="small-text"> This picture illustrates how to knock out and overexpressing the gene. We are going to
+            design the carrier with the modified gene and then use electro-transformation to add the carrier into the
+            plasma. Use the PGI gene as an example, the blue part represents hundreds of base pair before the PGI gene,
+            which help us to find the exact position to overexpress. Then the blue crosses over with the blue, and red
+            crosses over with red, therefore leading the black overexpressing gene to the PGI gene. In the example of
+            the GDH gene. A double crossover took place, the blue gene crossed over with blue, red crossed over with
+            red, and the black gene alone, which has been knocked out. We are also going to add resistance genes to
+            check whether the gene editing is successful or not with PCR.
+             We believe that the gene editing on Komagataeibacter xylinus DSM 6513 can bring a better future to solve
+            global issues and bring a better planet for future humans.
+            (figure 1-3 are the scene of our CCIC presentation) </p>
+    </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2020.igem.org/Team:CCA_San_Diego/Education">2020 CCA San Diego</a></li>
-      <li><a href="https://2020.igem.org/Team:Lambert_GA/Education">2020 Lambert GA</a></li>
-      <li><a href="https://2020.igem.org/Team:Stanford/Education">2020 Stanford</a></li>
-      <li><a href="https://2020.igem.org/Team:Waseda/Education">2020 Waseda</a></li>
-      <li><a href="https://2020.igem.org/Team:Fudan/Education">2020 Fudan</a></li>
-      <li><a href="https://2020.igem.org/Team:Toulouse_INSA-UPS/Education">2020 Toulouse INSA UPS</a></li>
-    </ul>
-  </div>
-</div>
+<style>
+    body {
+        background: linear-gradient(180deg, #D7D98A 0%, #9BA880 100%);
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .image-container {
+        width: 100%;
+        max-height: 842px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 1487px;
+        height: 842px;
+        object-fit: cover;
+    }
+
+    .main-container {
+        display: flex;
+        padding: 20px;
+    }
+
+    .index-container {
+        width: 350px;
+        padding: 20px;
+        background-color: #719057;
+        border-radius: 20px;
+        margin-right: 20px;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+    }
+
+    .index-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .index-image {
+        width: 208px;
+        height: 201px;
+        background: url('{{ url_for(' static ', filename=' education_assets/logo_index.svg ') }}') lightgray 50 % / cover no-repeat;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-color: transparent;
+    }
+
+    .index-container h3 {
+        color: #F7F0D2;
+        font-family: "Abhaya Libre";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .index-container ul {
+        list-style-type: none;
+        padding: 0;
+        color: #F7F0D2;
+    }
+
+    .index-container ul ul {
+        margin-left: 20px; /* Indent for nested list */
+    }
+
+    .index-container ul li {
+        margin-bottom: 10px;
+    }
+
+    .index-container ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .index-container ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .content-container {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #F7F0D2;
+        border-radius: 20px;
+        color: #333;
+    }
+
+    .content-container h2, .content-container h3, .content-container h4 {
+        margin-top: 20px;
+        color: #0F96DB;
+        text-align: left;
+        scroll-margin-top: 130px;
+    }
+
+    .content-container p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Large text */
+    .large-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    /* Medium text */
+    .medium-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    /* Small text with indentation */
+    .small-text {
+        color: #FFF;
+        font-family: "Source Han Sans SC";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+        padding-left: 20px; /* Indent */
+    }
+</style>
 
 {% endblock %}

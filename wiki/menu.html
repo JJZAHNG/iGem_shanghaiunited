@@ -1,77 +1,101 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-
-    <!---- TEAM NAME ---->
-    <a class="navbar-brand" href="#">HW-ShanghaiUnited</a>
-
-    <!---- SMALL SCREEN MENU ICON ---->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto left-aligned">
-
-        <!---- HOME ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-        </li>
-
-        <!---- TEAM ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-          </ul>
-        </li>
-
-        <!---- PROJECT ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Project
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
-          </ul>
-        </li>
-
-        <!---- SAFETY ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-        </li>
-
-        <!---- HUMAN PRACTICES ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
-        </li>
-
-        <!---- AWARDS ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Awards
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
-          </ul>
-        </li>
-
+<nav class="navbar">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="{{ url_for('pages', page='home') }}">Home</a></li>
+    <li class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle">Team</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ url_for('pages', page='team') }}">Team Members</a></li>
+        <li><a href="{{ url_for('pages', page='attribution') }}">Attribution</a></li>
       </ul>
-    </div>
-  </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle">Project</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ url_for('pages', page='description') }}">Description</a></li>
+        <li><a href="{{ url_for('pages', page='design') }}">Design</a></li>
+        <li><a href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+        <li><a href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle">Dry Lab</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ url_for('pages', page='sustainability') }}">Sustainability</a></li>
+        <li><a href="{{ url_for('pages', page='education') }}">Education</a></li>
+        <li><a href="{{ url_for('pages', page='human-practices') }}">Human Practice</a></li>
+        <li><a href="{{ url_for('pages', page='model') }}">Model</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="dropdown-toggle">Experiment</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ url_for('pages', page='results') }}">Results</a></li>
+        <li><a href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+        <li><a href="{{ url_for('pages', page='protocol') }}">Protocol</a></li>
+        <li><a href="{{ url_for('pages', page='safety') }}">Safety</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="{{ url_for('pages', page='achievement') }}">Achievement</a></li>
+  </ul>
 </nav>
+
+<style>
+  .navbar {
+    background-color: #4C5D32;
+    padding: 10px 20px;
+  }
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-item {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+  }
+
+  .dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.8em;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4C5D32;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+    min-width: 160px;
+  }
+
+  .dropdown-menu li {
+    margin: 0;
+  }
+
+  .dropdown-menu li a {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .nav-item a:hover {
+    background-color: #6F7F47;
+  }
+</style>
